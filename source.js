@@ -39,7 +39,11 @@ function loadHidden() {
   var hiddenEls = document.getElementsByClassName("hidden");
   var randomNumber = Math.floor(Math.random()*(nations.length));
   var test = getNation();
-  console.log("getNation", test.nation);
+  console.log("getNation flag?", nations[randomNumber].flag);
+   var flag = document.getElementById("flag")
+  console.log(flag)
+   flag.innerHTML = "<img src="+nations[randomNumber].flag+" >"
+   // body.style.backgroundImage = "url('img_tree.png')";
 
   for (var i = hiddenEls.length - 1; i >= 0; i--) {
     if(hiddenEls[i].classList.contains("nation")){ hiddenEls[i].innerHTML = nations[randomNumber].nativeName; }
@@ -55,8 +59,9 @@ function loadHidden() {
       hiddenEls[i].innerHTML = langList;
     }
   }
+ 
 }
-
+// <img src="https://placehold.it/300x300">
 
 function main() {
   loadHidden();
