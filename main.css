@@ -1,38 +1,54 @@
 body {
-	margin: none;
-	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: Lato,Helvetica,Arial,sans-serif;
 	transition: background 1s ease-in-out;
 	transition: background 1s ease-in;
 	transition: background 1s ease-out;
 	transition: background 1s ease;
 	transition: background 1s linear;
+	padding: 5em 0;
+
 }
 h1, h2 {
 	margin: 2em 0;
-
-}
-/*Used to hide h1, needed due to spans collapsing. */
-
-/*h1 {
-	width: 0;
-	visibility: hidden;
 }
 
-span {
-	visibility: visible;
-}*/
-
+.row {
+	height: auto;
+	width: 100%;
+	transition: background 1s linear;
+	background: #333;
+	background-size: 300px;
+ 	background-repeat: no-repeat;
+}
 .wrapper {
-	background: #fff;
-    position: relative;
+	display: flex;
+	padding: 0.5em 0;
 	margin: auto;
 	max-width: 70vw;
 	height: 70vh;
+	color: #fff;
+}
+#flag {
+    margin-top: 20%;
+	min-height: 100px;
+	height: auto;
+	width: 50%;
+	background-size: 300px;
+	background-size: contain; 
+ 	background-repeat: no-repeat;
+}
+.data{
+	height: 100%;
+	width: 50%;
 }
 .hidden {
 	opacity: 0;
 }
-
+.inline {
+	display: inline;
+}
 .x, .y{
 	position: absolute;
 	transition: opacity 1s linear;
@@ -40,4 +56,3 @@ span {
 .x {
 	z-index: 10;
 }
-
