@@ -2,13 +2,12 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: Lato,Helvetica,Arial,sans-serif;
-
 	transition: background 1s ease-in-out;
 	transition: background 1s ease-in;
 	transition: background 1s ease-out;
 	transition: background 1s ease;
 	transition: background 1s linear;
-			padding: 5em 0;
+	padding: 5em 0;
 
 }
 h1, h2 {
@@ -18,19 +17,31 @@ h1, h2 {
 .row {
 	height: auto;
 	width: 100%;
-	background: #fff;
-	/*background: url(https://placehold.it/300x300);*/
+	transition: background 1s linear;
+	background: #333;
+	background-size: 300px;
+ 	background-repeat: no-repeat;
 }
 .wrapper {
-	/*background: #fff;*/
+	display: flex;
 	padding: 0.5em 0;
-    position: relative;
 	margin: auto;
 	max-width: 70vw;
 	height: 70vh;
+	color: #fff;
+}
+#flag {
+    margin-top: 20%;
+	min-height: 100px;
+	height: auto;
+	width: 50%;
+	background-size: 300px;
+	background-size: contain; 
+ 	background-repeat: no-repeat;
 }
 .data{
-	width: 70%;
+	height: 100%;
+	width: 50%;
 }
 .hidden {
 	opacity: 0;
@@ -44,7 +55,4 @@ h1, h2 {
 }
 .x {
 	z-index: 10;
-}
-.width-auto{
-	width: 50%;
 }
